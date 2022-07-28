@@ -3,10 +3,18 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+const errorMessg = document.querySelector('#modal');
+errorMessg.classList.add('hidden');
 
+document.addEventListener('DOMContentLoaded', (e) =>{
+  console.log('DOM fully loaded and parsed');
+  hideMessage()
+  clickHandler()
+});
 
-
-
+function hideMessage(){
+  errorMessg.classList.add('hidden');
+}
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
 //------------------------------------------------------------------------------
